@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #068112;
+  box-shadow: inset 0px 4px 250px rgba(0, 0, 0, 0.5);
+}
+
+.photo{
+  width: 300px;
+  height: 193px;    /*193+24+114*/
+  border-radius: 50px;
+}
+
+.photo_div {
+  display: flex;
+  justify-content: center;
+}
+
+.polotno{
+  position: relative;
+  max-width: 800px;
+  background: #E9ED11;
+  border: 4px solid #000000;
+  margin: 0 auto;
+  padding-top: 34px;
+  height: 100vh;
+}
+
+.Name, .inform{
+  text-align: center;
+}
+
+.Name{
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.inform{
+  margin: 50px auto 0px;
+  width: 35vw;
+  min-width: 295px;
+  height: 114px;
+
+  font-size: 22px;
+  text-align: center;
+}
+
+.signature{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  margin: 0 20%;
+  width: 60%;
+}
+
+.mid{
+  margin: 0 7px;
+}
+/* .signature2{
+  position: absolute;
+  right: 44px;
+  bottom: 34px;
+} */
+a{
+  text-decoration: none;
+  color:inherit;
+}
+@media (max-width: 450px) {
+
+.Name{
+  font-size: 18px;
+}
+
+.inform{
+  font-size: 15px;
+}
+
+  .signature{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+}
+
+@media(max-width: 320px){
+  .polotno{
+    height: 100vh;
+  }
+}
